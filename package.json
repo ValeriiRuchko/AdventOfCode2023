@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev-watch": "tsc --watch & node --watch ./dist/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^20.10.1"
+  }
+}
