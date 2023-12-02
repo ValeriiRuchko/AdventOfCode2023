@@ -2,7 +2,6 @@ import { open } from "fs/promises";
 
 let sumOfCalibration = 0;
 let lines: string[] = [];
-// have to handle cases like oneight
 
 const regex = /[1-9]|one|two|three|four|five|six|seven|eight|nine/g;
 const replaceable =
@@ -51,7 +50,6 @@ export async function day1(filename: string): Promise<number> {
       let res = replacement + match.slice(toReplace[0].length);
       return res;
     });
-    // console.log("FUCK @#", replaced);
     let matched = replaced.match(regex)!;
     console.log("Line", line);
     console.log("Matched: ", matched);
@@ -103,5 +101,3 @@ export async function day1(filename: string): Promise<number> {
 
   return sumOfCalibration;
 }
-
-// console.log(day1("day1"));
