@@ -58,5 +58,4 @@ export async function day1(filename) {
     console.log(lines.length);
     return sumOfCalibration;
 }
-console.log(day1("day1"));
 //# sourceMappingURL=day1.js.map

@@ -5,7 +5,7 @@ let lines: string[] = [];
 // have to handle cases like oneight
 
 const regex = /[1-9]|one|two|three|four|five|six|seven|eight|nine/g;
-const replacable =
+const replaceable =
   /twone|threeight|oneight|fiveight|sevenine|eightwo|eighthree|nineight/g;
 
 let stringToNum = new Map();
@@ -43,7 +43,7 @@ export async function day1(filename: string): Promise<number> {
 
     let line = lines[i];
 
-    let replaced = line.replace(replacable, (match): string => {
+    let replaced = line.replace(replaceable, (match): string => {
       let toReplace = match.match(regex)!;
       let replacement = "";
       replacement = toReplace + toReplace[0][toReplace[0].length - 1];
