@@ -9,7 +9,6 @@
     "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
     // * Strictness
     "strict": true /* Enable all strict type-checking options. */,
-    "noUncheckedIndexedAccess": true /* Add 'undefined' to a type when accessed using an index. */,
     "noFallthroughCasesInSwitch": true /* Enable error reporting for fallthrough cases in switch statements. */,
     "noImplicitReturns": true /* Enable error reporting for codepaths that do not explicitly return in a function. */,
     // * Transpilation options

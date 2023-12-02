@@ -1,8 +1,13 @@
 {
   "scripts": {
-    "dev-watch": "tsc --watch & node --watch ./dist/index.js"
+    "dev-watch": "tsc --watch & node --watch ./dist/$FILE",
+    "test": "vitest"
   },
+  "type": "module",
   "dependencies": {
     "@types/node": "^20.10.1"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
   }
 }
