@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev-watch": "tsc --watch & node --watch ./dist/$FILE",
+    "debug": "tsc && node --inspect-brk ./dist/$FILE",
     "test": "vitest"
   },
   "type": "module",

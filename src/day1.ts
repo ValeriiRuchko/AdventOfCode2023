@@ -33,7 +33,7 @@ export async function day1(filename: string): Promise<number> {
     `/Users/valeriiruchko/Projects/AdventOfCode/inputs/${filename}.txt`,
   );
 
-  console.log(lines.length);
+  // console.log(lines.length);
 
   for (let i = 0; i < lines.length; i++) {
     let first = "",
@@ -51,8 +51,8 @@ export async function day1(filename: string): Promise<number> {
       return res;
     });
     let matched = replaced.match(regex)!;
-    console.log("Line", line);
-    console.log("Matched: ", matched);
+    // console.log("Line", line);
+    // console.log("Matched: ", matched);
 
     if (matched[0] !== null && matched[0].length === 1) {
       first = matched[0];
@@ -69,7 +69,7 @@ export async function day1(filename: string): Promise<number> {
       last = stringToNum.get(matched[matched?.length - 1]);
     }
 
-    console.log("First: ", first, "Last: ", last);
+    // console.log("First: ", first, "Last: ", last);
 
     // console.log(
     //   "First and last of matched: ",
@@ -92,12 +92,12 @@ export async function day1(filename: string): Promise<number> {
     // ---------
 
     let added = parseInt(`${first}${last}`);
-    console.log("Added", added);
+    // console.log("Added", added);
     sumOfCalibration += added;
   }
 
-  console.log("SUUUUM", sumOfCalibration);
-  console.log(lines.length);
+  // console.log("SUUUUM", sumOfCalibration);
+  // console.log(lines.length);
 
   return sumOfCalibration;
 }
